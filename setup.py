@@ -5,15 +5,10 @@ import os
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-extras_require = {
-    "ocr": [
-        "easyocr"
-    ],
-}
-
 install_requires=[
     "numpy",
-    "PiPlate"
+    # "PiPlate"
+    "click"
 ]
 
 
@@ -37,5 +32,4 @@ setuptools.setup(
     py_modules=[about["__title__"]],
     package_dir={"": "src"},
     install_requires=install_requires,
-    extras_require=extras_require
 )

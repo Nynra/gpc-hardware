@@ -1,3 +1,5 @@
-# PiPlate
+Pi-Plates
+gpiod
+spidev
 numpy
 click

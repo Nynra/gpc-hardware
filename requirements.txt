@@ -1,5 +1,8 @@
 Pi-Plates
+<<<<<<< HEAD
 gpiod
 spidev
+=======
+>>>>>>> fcc5b9aa9a49444f0bc2bbdd691e1e3187efed6b
 numpy
 click

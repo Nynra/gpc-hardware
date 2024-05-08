@@ -1,5 +1,5 @@
 try:
-    import piplates.DAQCplate as DAQC
+    import piplates.DAQCplate as DAQC2
 except ImportError:
     raise ImportError(
         "piplates.DAQCplate is not installed, are you running on a Raspberry Pi?"
@@ -61,6 +61,7 @@ class FunctionGenerator:
         return f"PiPlateFunctionGenerator at address {self._address}"
 
     # PUBLIC FUNCTIONS
+    @staticmethod
     def enable(self) -> ...:
         """Enable the function generator.
 
@@ -68,6 +69,7 @@ class FunctionGenerator:
         """
         DAQC2.fgON(self._address)
 
+    @staticmethod
     def disable(self) -> ...:
         """Disable the function generator
 
